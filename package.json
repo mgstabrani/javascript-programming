@@ -1,0 +1,25 @@
+{
+  "name": "javascript-programming",
+  "version": "1.0.0",
+  "description": "> Javascript codes to solve Dicoding quizzes. - [Content](#Content) - [Author](#Author) - [Reference](#Reference)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgstabrani/javascript-programming.git"
+  },
+  "author": "Mgs. Tabrani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgstabrani/javascript-programming/issues"
+  },
+  "homepage": "https://github.com/mgstabrani/javascript-programming#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
