@@ -5,17 +5,17 @@
 - [Reference](#Reference)
 
 ## Content
-- [Variable and Data Type](https://github.com/mgstabrani/javascript-programming/tree/main/variable-and-data-type)
-- [Logic Operator and If Else](https://github.com/mgstabrani/javascript-programming/tree/main/logic-operator-and-if-else)
-- [Object](https://github.com/mgstabrani/javascript-programming/tree/main/object)
-- [Array](https://github.com/mgstabrani/javascript-programming/tree/main/array)
-- [Map](https://github.com/mgstabrani/javascript-programming/tree/main/map)
-- [Function](https://github.com/mgstabrani/javascript-programming/tree/main/function)
-- [OOP](https://github.com/mgstabrani/javascript-programming/tree/main/oop)
-- [Functional Programming](https://github.com/mgstabrani/javascript-programming/tree/main/functional-programming)
-- [Module](https://github.com/mgstabrani/javascript-programming/tree/main/module)
-- [Error Handling](https://github.com/mgstabrani/javascript-programming/tree/main/error-handling)
-- [Concurrency](https://github.com/mgstabrani/javascript-programming/tree/main/concurrency)
+- [Variable and Data Type](src/variable-and-data-type)
+- [Logic Operator and If Else](src/logic-operator-and-if-else)
+- [Object](src/object)
+- [Array](src/array)
+- [Map](src/map)
+- [Function](src/function)
+- [OOP](src/oop)
+- [Functional Programming](src/functional-programming)
+- [Module](src/module)
+- [Error Handling](src/error-handling)
+- [Concurrency](src/concurrency)
 
 ## Author
 [Mgs. Tabrani](https://github.com/mgstabrani)
