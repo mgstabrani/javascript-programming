@@ -8,13 +8,16 @@
  *       - error: NetworkError akan dibawa oleh callback bila isOffline bernilai true.
  *       - user: data user akan dibawa oleh callback bila isOffline bernilai false.
  *   - gettingUserName:
- *      - fungsi ini memanggil fungsi fetchingUserFromInternet dengan nilai isOffline: false untuk mendapatkan data user name dari internet.
- *      - fungsi ini harus mengembalikan nilai user.name, namun sulit karena menggunakan pola callback.
+ *      - fungsi ini memanggil fungsi fetchingUserFromInternet dengan nilai isOffline:
+ *        false untuk mendapatkan data user name dari internet.
+ *      - fungsi ini harus mengembalikan nilai user.name, namun sulit
+ *        karena menggunakan pola callback.
  *      - Maka dari itu, ubahlah fetchingUserFromInternet dari callback menjadi promise
  *      - Dengan begitu, Anda bisa memanfaatkan .then atau async/await untuk mendapatkan user.name.
  *
  * TODO: 1
- * - Ubahlah fungsi fetchingUserFromInternet dengan memanfaatkan Promise. Anda bisa menghapus implementasi callback.
+ * - Ubahlah fungsi fetchingUserFromInternet dengan memanfaatkan Promise.
+ *   Anda bisa menghapus implementasi callback.
  *
  * TODO: 2
  * - Ubahlah cara mengonsumsi fungsi fetchingUserFromInternet dari callback ke Promise.
@@ -27,36 +30,32 @@
  * - Tetap gunakan NetworkError untuk membawa nilai error pada Promise
  */
 
-const NetworkError = require('../concurrency/NetworkError');
-  
-  // TODO: 1
-  const fetchingUserFromInternet = (isOffline) => {
-      return new Promise((resolve, reject) => {
-          setTimeout(() => {
-            if (!isOffline) {
-                resolve({ name: 'John', age: 18 });
-            }else {
-                reject(new NetworkError('Gagal mendapatkan data dari internet'), null);
-            }
-          }, 500);
-        })
-  };
-  
-  
-  // TODO: 2
-  async function gettingUserName() {
-      try{
-          const user = await fetchingUserFromInternet(false);
-          return user.name;
-        }catch(rejectedReason) {
-          return rejectedReason;
-     }
+const NetworkError = require('./NetworkError');
+
+// TODO: 1
+const fetchingUserFromInternet = (isOffline) => new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (!isOffline) {
+      resolve({ name: 'John', age: 18 });
+    } else {
+      reject(new NetworkError('Gagal mendapatkan data dari internet'), null);
+    }
+  }, 500);
+});
+
+// TODO: 2
+async function gettingUserName() {
+  try {
+    const user = await fetchingUserFromInternet(false);
+    return user.name;
+  } catch (rejectedReason) {
+    return rejectedReason;
   }
-  gettingUserName();
-  
-  /**
+}
+gettingUserName();
+
+/**
    * Hiarukan kode di bawah ini
    */
-  
-  module.exports = { fetchingUserFromInternet, gettingUserName };
-  
+
+module.exports = { fetchingUserFromInternet, gettingUserName };

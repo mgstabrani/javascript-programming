@@ -1,12 +1,13 @@
+/* eslint-disable class-methods-use-this */
 class Wolf {
-    constructor() {
-      this.strength = Math.floor(Math.random() * 100);
-    }
-  
-    howl() {
-      return 'Auuuuuuuuu';
-    }
+  constructor() {
+    this.strength = Math.floor(Math.random() * 100);
   }
-  
-  // TODO 2
+
+  howl() {
+    return 'Auuuuuuuuu';
+  }
+}
+
+// TODO 2
 module.exports = Wolf;

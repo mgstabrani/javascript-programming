@@ -20,20 +20,17 @@
  *    power(4, 0.5) // 2
  */
 
-
 // TODO
-function minimal(a,b){
-    if(b < a){
-        return b;
-    }else{
-        return a;
-    }
+function minimal(a, b) {
+  if (b < a) {
+    return b;
+  }
+  return a;
 }
 
-function power(a,b){
-    return a**b;
+function power(a, b) {
+  return a ** b;
 }
-
 
 /**
  * Hiraukan kode di bawah ini
