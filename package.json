@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint ./"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,9 @@
   },
   "homepage": "https://github.com/mgstabrani/javascript-programming#readme",
   "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
     "jest": "^27.0.6"
   }
 }
