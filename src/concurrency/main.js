@@ -27,12 +27,7 @@
  * - Tetap gunakan NetworkError untuk membawa nilai error pada Promise
  */
 
- class NetworkError extends Error {
-    constructor(message) {
-      super(message);
-      this.name = 'NetworkError';
-    }
-  }
+const NetworkError = require('../concurrency/NetworkError');
   
   // TODO: 1
   const fetchingUserFromInternet = (isOffline) => {
@@ -63,5 +58,5 @@
    * Hiarukan kode di bawah ini
    */
   
-  module.exports = { fetchingUserFromInternet, gettingUserName, NetworkError };
+  module.exports = { fetchingUserFromInternet, gettingUserName };
   
