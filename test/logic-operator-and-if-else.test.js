@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const scoreChecker = require('../src/logic-operator-and-if-else/main');
 
 test('scoreChecker function should get result based on score', () => {

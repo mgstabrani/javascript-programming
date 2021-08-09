@@ -8,13 +8,13 @@
  */
 
 // TODO
-evenNumber = new Array();
-for(let i = 1; i <= 50; i++){
-    evenNumber.push(i*2);
+const evenNumber = [];
+for (let i = 1; i <= 50; i += 1) {
+  evenNumber.push(i * 2);
 }
 
 /**
  * Hiraukan kode di bawah ini
  */
 
- module.exports = evenNumber;
+module.exports = evenNumber;
