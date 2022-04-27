@@ -30,32 +30,33 @@
  * - Tetap gunakan NetworkError untuk membawa nilai error pada Promise
  */
 
-const NetworkError = require('./NetworkError');
+const NetworkError = require('./NetworkError')
 
 // TODO: 1
-const fetchingUserFromInternet = (isOffline) => new Promise((resolve, reject) => {
-  setTimeout(() => {
-    if (!isOffline) {
-      resolve({ name: 'John', age: 18 });
-    } else {
-      reject(new NetworkError('Gagal mendapatkan data dari internet'), null);
-    }
-  }, 500);
-});
+const fetchingUserFromInternet = (isOffline) =>
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (!isOffline) {
+        resolve({ name: 'John', age: 18 })
+      } else {
+        reject(new NetworkError('Gagal mendapatkan data dari internet'), null)
+      }
+    }, 500)
+  })
 
 // TODO: 2
-async function gettingUserName() {
+async function gettingUserName () {
   try {
-    const user = await fetchingUserFromInternet(false);
-    return user.name;
+    const user = await fetchingUserFromInternet(false)
+    return user.name
   } catch (rejectedReason) {
-    return rejectedReason;
+    return rejectedReason
   }
 }
-gettingUserName();
+gettingUserName()
 
 /**
-   * Hiarukan kode di bawah ini
-   */
+ * Hiarukan kode di bawah ini
+ */
 
-module.exports = { fetchingUserFromInternet, gettingUserName };
+module.exports = { fetchingUserFromInternet, gettingUserName }

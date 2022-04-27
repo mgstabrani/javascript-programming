@@ -29,13 +29,13 @@ const restaurant = {
   city: 'Palembang',
   'favorite drink': 'Orange juice',
   'favorite food': 'Rendang',
-  isVegan: false,
-};
+  isVegan: false
+}
 
-const { name } = restaurant;
-const favoriteDrink = restaurant['favorite drink'];
+const { name } = restaurant
+const favoriteDrink = restaurant['favorite drink']
 
 /**
  * Hiraukan kode di bawah ini
  */
-module.exports = { restaurant, name, favoriteDrink };
+module.exports = { restaurant, name, favoriteDrink }

@@ -8,14 +8,17 @@
  */
 
 // TODO
-const firstName = 'Mgs.';
-const lastName = 'Tabrani';
-const age = 19;
-const isMarried = false;
+const firstName = 'Mgs.'
+const lastName = 'Tabrani'
+const age = 19
+const isMarried = false
 /**
  * Hiraukan kode di bawah ini
  */
 
 module.exports = {
-  firstName, lastName, age, isMarried,
-};
+  firstName,
+  lastName,
+  age,
+  isMarried
+}
