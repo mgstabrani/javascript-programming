@@ -14,8 +14,8 @@
  */
 
 // TODO 3
-const Tiger = require('./Tiger');
-const Wolf = require('./Wolf');
+const Tiger = require("./Tiger");
+const Wolf = require("./Wolf");
 
 const fight = (tiger, wolf) => {
   if (tiger.strength > wolf.strength) {
@@ -24,7 +24,7 @@ const fight = (tiger, wolf) => {
   if (wolf.strength > tiger.strength) {
     return wolf.howl();
   }
-  return 'Harimau dan serigala sama-sama kuat!';
+  return "Harimau dan serigala sama-sama kuat!";
 };
 
 const myTiger = new Tiger();
@@ -34,5 +34,8 @@ const result = fight(myTiger, myWolf);
 
 // TODO 4
 module.exports = {
-  fight, myTiger, myWolf, result,
+  fight,
+  myTiger,
+  myWolf,
+  result,
 };

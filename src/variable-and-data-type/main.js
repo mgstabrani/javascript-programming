@@ -8,8 +8,8 @@
  */
 
 // TODO
-const firstName = 'Mgs.';
-const lastName = 'Tabrani';
+const firstName = "Mgs.";
+const lastName = "Tabrani";
 const age = 19;
 const isMarried = false;
 /**
@@ -17,5 +17,8 @@ const isMarried = false;
  */
 
 module.exports = {
-  firstName, lastName, age, isMarried,
+  firstName,
+  lastName,
+  age,
+  isMarried,
 };

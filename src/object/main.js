@@ -25,15 +25,15 @@
 
 // TODO
 const restaurant = {
-  name: 'Raso Minang',
-  city: 'Palembang',
-  'favorite drink': 'Orange juice',
-  'favorite food': 'Rendang',
+  name: "Raso Minang",
+  city: "Palembang",
+  "favorite drink": "Orange juice",
+  "favorite food": "Rendang",
   isVegan: false,
 };
 
 const { name } = restaurant;
-const favoriteDrink = restaurant['favorite drink'];
+const favoriteDrink = restaurant["favorite drink"];
 
 /**
  * Hiraukan kode di bawah ini

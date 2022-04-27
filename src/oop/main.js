@@ -57,13 +57,17 @@ class Eagle extends Animal {
   }
 }
 
-const myRabbit = new Rabbit('Labi', 2);
-const myEagle = new Eagle('Elo', 4);
+const myRabbit = new Rabbit("Labi", 2);
+const myEagle = new Eagle("Elo", 4);
 
 /**
  * Hiraukan kode di bawah ini
  */
 
 module.exports = {
-  Animal, Rabbit, Eagle, myRabbit, myEagle,
+  Animal,
+  Rabbit,
+  Eagle,
+  myRabbit,
+  myEagle,
 };

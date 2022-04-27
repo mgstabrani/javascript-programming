@@ -23,15 +23,15 @@ function scoreChecker(score) {
 
   // TODO
   if (score >= 90) {
-    result = 'Selamat! Anda mendapatkan nilai A.';
+    result = "Selamat! Anda mendapatkan nilai A.";
   } else if (score >= 80) {
-    result = 'Anda mendapatkan nilai B.';
+    result = "Anda mendapatkan nilai B.";
   } else if (score >= 70) {
-    result = 'Anda mendapatkan nilai C.';
+    result = "Anda mendapatkan nilai C.";
   } else if (score >= 60) {
-    result = 'Anda mendapatkan nilai D.';
+    result = "Anda mendapatkan nilai D.";
   } else {
-    result = 'Anda mendapatkan nilai E.';
+    result = "Anda mendapatkan nilai E.";
   }
 
   // Jangan hapus kode ini
@@ -39,6 +39,6 @@ function scoreChecker(score) {
 }
 
 /**
-   * Hiraukan kode di bawah ini
-   */
+ * Hiraukan kode di bawah ini
+ */
 module.exports = scoreChecker;

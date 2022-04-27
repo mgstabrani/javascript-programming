@@ -5,7 +5,7 @@ class Wolf {
   }
 
   howl() {
-    return 'Auuuuuuuuu';
+    return "Auuuuuuuuu";
   }
 }
 
