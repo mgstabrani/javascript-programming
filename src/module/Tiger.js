@@ -5,7 +5,7 @@ class Tiger {
   }
 
   growl() {
-    return 'grrrrrrr';
+    return "grrrrrrr";
   }
 }
 
