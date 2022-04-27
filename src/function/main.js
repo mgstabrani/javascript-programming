@@ -21,19 +21,19 @@
  */
 
 // TODO
-function minimal(a, b) {
+function minimal (a, b) {
   if (b < a) {
-    return b;
+    return b
   }
-  return a;
+  return a
 }
 
-function power(a, b) {
-  return a ** b;
+function power (a, b) {
+  return a ** b
 }
 
 /**
  * Hiraukan kode di bawah ini
  */
 
-module.exports = { minimal, power };
+module.exports = { minimal, power }

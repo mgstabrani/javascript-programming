@@ -1,12 +1,12 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /* eslint-disable no-undef */
-const { expect } = require('@jest/globals');
-const { myTiger, myWolf } = require('../src/module/main');
+const { expect } = require('@jest/globals')
+const { myTiger, myWolf } = require('../src/module/main')
 
 test('myTiger should has the right method', () => {
-  expect(myTiger.growl()).toBe('grrrrrrr');
-});
+  expect(myTiger.growl()).toBe('grrrrrrr')
+})
 
 test('myWolf should has the right method', () => {
-  expect(myWolf.howl()).toBe('Auuuuuuuuu');
-});
+  expect(myWolf.howl()).toBe('Auuuuuuuuu')
+})

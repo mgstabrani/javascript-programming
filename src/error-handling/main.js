@@ -49,46 +49,46 @@
 
 // TODO 1
 class ValidationError extends Error {
-  constructor(message) {
-    super(message);
-    this.name = 'ValidationError';
+  constructor (message) {
+    super(message)
+    this.name = 'ValidationError'
   }
 }
 // TODO 2
-function validateNumberInput(a, b, c) {
+function validateNumberInput (a, b, c) {
   if (typeof a !== 'number') {
-    throw new ValidationError('Argumen pertama harus number');
+    throw new ValidationError('Argumen pertama harus number')
   }
 
   if (typeof b !== 'number') {
-    throw new ValidationError('Argumen kedua harus number');
+    throw new ValidationError('Argumen kedua harus number')
   }
 
   if (typeof c !== 'number') {
-    throw new ValidationError('Argumen ketiga harus number');
+    throw new ValidationError('Argumen ketiga harus number')
   }
 }
 
 const detectTriangle = (a, b, c) => {
   // TODO 3
   try {
-    validateNumberInput(a, b, c);
+    validateNumberInput(a, b, c)
 
     if (a === b && b === c) {
-      return 'Segitiga sama sisi';
+      return 'Segitiga sama sisi'
     }
 
     if (a === b || a === c || b === c) {
-      return 'Segitiga sama kaki';
+      return 'Segitiga sama kaki'
     }
 
-    return 'Segitiga sembarang';
+    return 'Segitiga sembarang'
   } catch (error) {
-    return error.message;
+    return error.message
   }
-};
+}
 
 /**
-   * Hiraukan kode di bawah ini
-   */
-module.exports = { ValidationError, validateNumberInput, detectTriangle };
+ * Hiraukan kode di bawah ini
+ */
+module.exports = { ValidationError, validateNumberInput, detectTriangle }

@@ -16,17 +16,24 @@ const books = [
   { title: 'The Ghost', author: 'Robert Harris', sales: 807311 },
   { title: 'White Teeth', author: 'Zadie Smith', sales: 815586 },
   { title: 'Fifty Shades of Grey', author: 'E. L. James', sales: 3758936 },
-  { title: 'Jamie\'s Italy', author: 'Jamie Oliver', sales: 906968 },
+  { title: "Jamie's Italy", author: 'Jamie Oliver', sales: 906968 },
   { title: 'I Can Make You Thin', author: 'Paul McKenna', sales: 905086 },
-  { title: 'Harry Potter and the Deathly Hallows', author: 'J.K Rowling', sales: 4475152 },
-];
+  {
+    title: 'Harry Potter and the Deathly Hallows',
+    author: 'J.K Rowling',
+    sales: 4475152
+  }
+]
 
 // TODO
-let greatAuthors = books.filter((book) => book.sales > 1000000);
-greatAuthors = greatAuthors.map((book) => `${book.author} adalah penulis buku ${book.title} yang sangat hebat!`);
+let greatAuthors = books.filter((book) => book.sales > 1000000)
+greatAuthors = greatAuthors.map(
+  (book) =>
+    `${book.author} adalah penulis buku ${book.title} yang sangat hebat!`
+)
 
 /**
  * Hiraukan kode di bawah ini
  */
 
-module.exports = { books, greatAuthors };
+module.exports = { books, greatAuthors }
